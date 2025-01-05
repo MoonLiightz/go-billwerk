@@ -310,7 +310,6 @@ func (b *Billwerk) GetPlan(ctx context.Context, handle string, params ...QueryPa
 
 	var res Plan
 	if err = b.Do(req, &res); err != nil {
-		fmt.Printf("%+v\n", err)
 		return nil, err
 	}
 
